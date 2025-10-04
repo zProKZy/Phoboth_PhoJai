@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PhoBoth PhoJai</title>
+  <link href="https://fonts.googleapis.com/css2?family=Mitr:wght@300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/x-icon" href="cat.jpg">
+</head>
+<body>
+  <div class="container">
+    <h1>Say cheese!🧀</h1>
+    <video autoplay id="videoElement"></video>
+
+    <div class="controls">
+        <input type="number" min="0" max="30" step="1" value="" placeholder="ตั้งเวลา (วินาที)" id="timer"/>
+        <button id="captureButton">ถ่ายรูปเลย!</button>
+        <button id="stripButton" disabled>รวมเป็น Photo Strip</button>
+        
+        <!-- ปุ่มเปลี่ยนสีพื้นหลัง -->
+        <div style="margin-top: 10px;">
+            <label for="bgSelector">สีพื้นหลัง </label>
+            <select id="bgSelector">
+                <option value="pink">สีชมพู</option>
+                <option value="blue">สีน้ำเงิน</option>
+                <option value="yellow">สีเหลือง</option>
+                <option value="green">สีเขียว</option>
+            </select>
+        </div>
+    </div>
+    <div id="photos"></div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>
+      <a href="https://github.com/zProKZy" target="_blank">GitHub</a> | 
+      <a href="donate.html">Donate</a>
+    </p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
